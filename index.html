@@ -265,32 +265,128 @@
                 <p class="fs-5 text-body-secondary">Вы находитесь на сайте, предназначенном для продажи товаров</p>
             </div>
         </header>
-
-        <main class="row">
-            <div class="row text-center">
-                <div class="col-4">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Товар 1</h4>
+        <div class="row align-items-center">
+            <main class="row">
+                <div class="row text-center align-items-start">
+                    <div class="col-5">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Товар 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$100</h2>
+                                <p>
+                                    10 users included,
+                                    2 GB of storage,
+                                    Email support,
+                                    Help center access
+                                </p>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary btn-success">Купить
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 class="card-title pricing-card-title">$100</h2>
-                            <p>
-                                10 users included,
-                                2 GB of storage,
-                                Email support,
-                                Help center access
-                            </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                    </div>
+                    <div class="col-5">
+                        <form>
+                            <div class="form-group">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp" placeholder="email">
+                                </div>
+                                <div class="mb-3 button">
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Отправить
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container text-center">
+                    <h2>FAQ</h2>
+                    <button class="btn btn-outline-primary col-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Как купить?
+                    </button>
+                    <button class="btn btn-outline-primary col-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExampl" aria-expanded="false" aria-controls="collapseExampl">
+                        Как доставить?
+                    </button>
+                    <button class="btn btn-outline-primary col-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExamp" aria-expanded="false" aria-controls="collapseExamp">
+                        Какая гарантия?
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Купить товар можно заказав на сайте.
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExampl">
+                        <div class="card card-body">
+                            Доставка производится в течении трех дней.
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExamp">
+                        <div class="card card-body">
+                            Гарантия предоставляется компанией производителя.
                         </div>
                     </div>
                 </div>
+            </main>
+            <div class="table-responsive mt-5">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr class="table-active">
+                        <th scope="col">Номер</th>
+                        <th scope="col">Название товара</th>
+                        <th scope="col">Цена за штуку</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Итоговая сумма</th>
+                        <th scope="col">Статус заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ноутбук</td>
+                        <td>80000</td>
+                        <td>9</td>
+                        <td>720000</td>
+                        <td class="table-primary">Новый</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Монитор</td>
+                        <td>10000</td>
+                        <td>6</td>
+                        <td>60000</td>
+                        <td class="table-warning">Обработан</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Клавиатура</td>
+                        <td>1200</td>
+                        <td>10</td>
+                        <td>120000</td>
+                        <td class="table-success">Обработка</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Стол компьютерный</td>
+                        <td>9000</td>
+                        <td>10</td>
+                        <td>900000</td>
+                        <td class="table-danger">Отмена</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-        </main>
-
+        </div>
     </div>
-
 </main>
+0
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
